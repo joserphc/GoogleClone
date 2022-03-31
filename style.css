@@ -1,0 +1,262 @@
+:root {
+    --color-items:rgb(233, 233, 233);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header{
+    width: 100vw;
+    height: 60px;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    height: inherit;
+}
+
+.nav-right{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right li {
+    margin-left: 10px;
+}
+
+.nav-right a {
+    margin-right: 10px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.nav-right a:hover{
+    text-decoration: underline;
+}
+
+.nav-right__logo{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+.nav-right__profile a img{
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.main-content__logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.main-content__logo--item {
+    width: 180px;
+    height: 92px;
+}
+
+.main-content__logo--item img{
+    width: 100%;
+}
+
+main .main-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    width: 100vw;
+}
+
+main .main-input-container{
+    width: 90vw;
+    min-width: 310px;
+    border-radius: 100px;
+    border:1px solid #dfe1e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 450px;
+    height: 45px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    margin-left: 10px;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .micro-icon {
+    margin-right: 10px;
+    background-image: url('https://www.cuecamp.com/wp-content/uploads/2019/11/Google_mic.svg_.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.main-content__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    min-width: 320px;
+}
+
+.main-content__button div {
+    display: inline-block;
+}
+
+.main-content__button button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+
+.main-content__button button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    color: #222;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    font-size: 1.6rem;
+    margin-top: 100px;
+}
+
+.footer__country{
+    width: 100vw;
+    height: 48px;
+    background-color:rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.footer__country span{
+    display: inline-block;
+    margin: 15px 16px 15px 16px;
+    color: rgb(138, 138, 138);
+}
+
+.footer__content{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color:rgb(245, 245, 245);
+}
+
+.footer__content--left{
+    display: inline-block;
+}
+
+.footer__content--left li{
+    display: inline-block;
+    margin: 13px;
+}
+
+.footer__content--right{
+    display: inline-block;
+}
+
+.footer__content--right li{
+    display: inline-block;
+    margin: 13px;
+}
+
+.footer__content--right li a,
+.footer__content--left li a{
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+}
+
+.footer__content--right li a:hover,
+.footer__content--left li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width:1024px) {
+    .main-content__logo{
+        margin-top: 0;
+    }
+    .main-content__logo--item {
+        width: 272px;
+        height: 92px;
+    }
+    main .main-input-container{
+        width: 580px;
+    }
+    main .main-input .search-icon {
+        width: 15px;
+        height: 15px;
+    }
+    
+    main .main-input .micro-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .main-content__button {
+        width: 530px;
+    }
+    .main-content__button button {
+        padding: 0 15px;
+        margin-right: 15px;
+    }
+    .footer{
+        position: absolute;
+    }
+    .footer__content--right{
+        position: absolute;
+        right: 0;
+    }
+    .footer__content{
+        display: flex;
+        height: 46px;
+    }
+}
